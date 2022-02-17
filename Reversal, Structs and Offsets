@@ -1,0 +1,58 @@
+object name = GameWorld
+    
+    class LocalGameWorld
+    {
+    public:
+        char _0x0000[32];
+        Dictionary* Dictionary_balistick; //0x0020 
+        List* BallisticCalculatorsCachedList; //0x0028 
+        List* List_unknown; //0x0030 
+        List* LootList; //0x0038 
+        List* List_Player; //0x0040 
+        Dictionary* Turnables; //0x0048 
+        DWORD64* EffectsCommuntator; //0x0050 
+        DWORD64* BollistickCollider; //0x0058 
+        char _0x0060[8];
+        DWORD64 unknown1; //0x0068 
+    };
+    
+    
+class Player   
+    {
+    public:
+        DWORD64* N000014D7; //0x0000 
+        char pad_0x0008[0x28]; //0x0008
+        __int64 OnPoseChangedEvent; //0x0030           //Local ?
+        __int64 OnSpeedChangedEvent; //0x0038          //Local ?
+        CharacterController* m_CharacterController; //0x0040 
+        char pad_0x0048[0x8]; //0x0048
+        MovementContext* m_MovementContext; //0x0050 
+        Pedometer* m_Pedometer; //0x0058
+        __int64 _mouseSensitivityMod; //0x0060 
+        __int64 OnTimeBeingWathed; //0x0068 
+        char pad_0x0070[0x18]; //0x0070
+        ProceduralWeaponAnimation* proceduralWeaponAnimation_0; //0x0088 
+        char pad_0x0090[0x10]; //0x0090
+        PlayerBody* playerBody_0; //0x00A0 
+        __int64 _elbowBends; //0x00A8 
+        char pad_0x00B0[0x10]; //0x00B0
+        __int64 _fbbik; //0x00C0 
+        __int64 Grounder; //0x00C8 
+        __int64 HitReaction; //0x00D0 
+        char pad_0x00D8[0x188]; //0x00D8
+        Profile* m_Profile; //0x0260 
+        __int64 _statisticsManager; //0x0268 
+        __int64 Physical; //0x0270 
+        char pad_0x0278[0x18]; //0x0278
+        __int64 _healthController; //0x0290 
+        __int64 _hitColliders; //0x0298 
+        SinglePlayerInventoryController* m_SinglePlayerInventoryController; //0x02A0 
+        FirearmController* _handsController; //0x02A8 
+        __int64 _questController; //0x02B0 
+        char pad_0x02B8[0x20]; //0x02B8
+        PlayerBones* m_PlayerBones; //0x02D8 
+        char pad_0x02E0[0xA4]; //0x02E0
+        D3DXVECTOR3 _lMarkerRawPosition; //0x0384 
+        D3DXVECTOR3 _lElbowRawPosition; //0x0390 
+        D3DXVECTOR3 _rElbowRawPosition; //0x039C         
+    };
